@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { example } from './data.js';
 // import data from './data/atletas/atletas.js';
 // import data from './data/lol/lol.js';
