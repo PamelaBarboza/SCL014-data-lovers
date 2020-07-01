@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    
+}
+
+.banner{
+height: 50%;
+width: 100%;
+z-index: -1;
+}
+
+.boton{
+    height: 30%;
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+    margin-left: 6%;  
+
+}
