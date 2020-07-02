@@ -16,6 +16,7 @@ const showMainPotterCharacters = (data) => {
           <img src = '${obj.image}' alt = "Image" class="pictureCharacter"/>
           <h2 class="fontNameCharacter">${obj.name}</h2>
         </div>
+        
         <div class="card-back">
           <h1>${obj.name}</h1>
           <p>Nacimiento: ${obj.dateOfBirth}</p>
