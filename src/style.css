@@ -50,8 +50,8 @@ z-index: -1;
 
 .card-inside {
   position: relative;
-  width: 165%;
-  height: 170%;
+  width: 100%;
+  height: 100%;
   top: 40%;
   text-align: center;
   transition: transform 0.6s;
@@ -60,9 +60,9 @@ z-index: -1;
 
 .card-front, .card-back {
   position: absolute;
-  width: 65%;
-  height: 50%;
-
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
   
 }
 
@@ -74,10 +74,20 @@ z-index: -1;
 .card-back {
   color: #fff ;
   transform: rotateY(180deg);
-  background-color: #73B2D9;
-  text-align: center;
+  background-color: #3a3a3a;
+  text-align: left;
+  
+  
 }
 
+.hide {
+    display: none;
+  }
+  
+
+.card:hover .card-inside{
+    transform: rotateY(180deg);
+  }
 
 /* Tipografias */
 
@@ -87,6 +97,32 @@ z-index: -1;
     color: #050505;
     ;
 }
+
+h1 {
+    font-size: 25px;
+    margin: 25px 20px 18px;
+    text-align: center;
+    font-family: 'Marcellus SC', serif;
+  }
+  
+
+p {
+    font-size: 18px;
+    margin: 15px 20px;
+    text-align: left;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+
+  div > li {
+    font-size: 1.000em;
+    margin: 3px;
+    margin-left: 38px;
+  }
+  
 
   
  

@@ -19,15 +19,14 @@ const showMainPotterCharacters = (data) => {
         
         <div class="card-back">
           <h1>${obj.name}</h1>
-          <p>Nacimiento: ${obj.dateOfBirth}</p>
-          <p>Especie: ${obj.species}</p>
-          <p>Estatus de sangre: ${obj.ancestry}</p>
           <p>Casa: ${obj.house}</p>
           <p>Patronus: ${obj.patronus}</p>
           <p>Varita:</p>
           <li>Madera: ${obj.wand.wood}</li>
           <li>Núcleo: ${obj.wand.core}</li>
           <li>Largo: ${obj.wand.length}</li>
+          <p>Especie: ${obj.species}</p>
+          <p>Estatus de sangre: ${obj.ancestry}</p>
           <p>Actor: ${obj.actor}</p>
         </div>
       </div>
