@@ -171,16 +171,29 @@ a {
   display: inline block;
   font-size: 20px;
   font-family: 'Marcellus SC', serif;
+  }
 
-
+  .icon-search {
+    cursor: pointer;
+    color: #000000;
+    margin-top: -36px;
+    font-size: 24px;
+    left: 32%;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  
+  .fab {
+      font-family:  'Marcellus SC', serif;
   }
 
   /*Responsive*/
 
   @media (max-width:360px){
     .boton{
-      height: 11%;
-      width: 20%;
+      height: 10%;
+      width: 18%;
       margin-left: 5%;
       margin-top: -2%;
 }
@@ -223,8 +236,60 @@ div > li {
   margin: 3px;
   margin-left: 38px;
 }
+.menu{
+  height: 50%;
+  display: list-item;
+  margin-left: 10%;
+  list-style: none;
+  margin-top: 10%;
+  margin-bottom: -20%;
+ 
 }
 
+a {
+  color:rgb(0, 0, 0);
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline block;
+  font-size: 20px;
+  font-family: 'Marcellus SC', serif;
+
+  }
+
+  .icon-search {
+    cursor: pointer;
+    color: #000000;
+    font-size: 20px;
+    left: 70%;
+    position: absolute;
+    z-index: 1;
+    margin-top: -3%;
+  }
+
+  .searchbar {
+    background-color: #f3f3f3;
+    color: #000000;
+    width: 75%;
+    height: 20%;
+    margin: 20px 5px 10px -1px;
+    padding: 8px 8px;
+    font-family: 'Marcellus SC', serif;
+    font-size: 12px;
+    font-weight: bold;
+    border: #000000 solid 1px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+  
+    
+  }
+  
+  
+  .fab {
+      font-family:  'Marcellus SC', serif;
+  }
+}
+/*
 
   @media (max-width:768px){
     .boton{
@@ -251,3 +316,4 @@ div > li {
 
 }
  }
+ */
