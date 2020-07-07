@@ -29,7 +29,7 @@ padding: 20px 40px 10px;
 
 .principalMenuCategorie li:hover a, .principalMenuCategorie li a:focus {
 background-color: cadetblue;
-border-radius: 15px;  
+  
 }
 
 .principalMenuCategorie li a {
@@ -52,7 +52,7 @@ align-content: center;
 text-decoration: none;
 font-size: 22px;
 line-height: 25px;
-color: brown;
+color: rgb(0, 0, 0);
 justify-content: space-between;
 flex-wrap: wrap;
 }
@@ -60,6 +60,7 @@ flex-wrap: wrap;
 #menu_general li ul {
 height: 0;
 overflow: hidden;
+font-weight: bold;
 }
 
 #menu_general li:hover ul, #menu_general li:focus ul {
@@ -86,13 +87,13 @@ font-size: 11px;
 }
 
 h1 {
-font-size: 1.500em;
+font-size: 16px;
 margin: 20px 20px 20px;
 text-align: center;
 }
 
 h2 {
-font-size: 1.500em;
+font-size: 116px;
 color: #ffffff;
 text-align: center;
 margin: 20px 10px;
