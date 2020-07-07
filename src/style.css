@@ -1,10 +1,10 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 .header{
-  display: flex;
+display: flex;
 }
 
 .banner{
@@ -14,303 +14,334 @@ z-index: -1;
 }
 
 .boton{
-    height: 30%;
-    width: 16%;
-    position: absolute;
-    z-index: 1;
-    margin-left: 4%;  
+  height: 30%;
+  width: 16%;
+  position: absolute;
+  z-index: 1;
+  margin-left: 4%;  
 }
 
 /* Estilos del menu principal*/
 
 a {
-  padding: 20px 40px 10px;
+padding: 20px 40px 10px;
 }
 
 .principalMenuCategorie li:hover a, .principalMenuCategorie li a:focus {
-  background-color: cadetblue;
-  border-radius: 15px;  
+background-color: cadetblue;
+border-radius: 15px;  
 }
 
 .principalMenuCategorie li a {
-  padding: 20px 40px 20px 80px;
+padding: 20px 40px 20px 80px;
 }
 
 /* Estilos de las subcategorías del menú principal */
 #menu_general {
-  display: inline-block;
-  height: 100%;
-  position: fixed;  
-  background-color: #fff;
-  margin-left: 4%;
+display: inline-block;
+height: 100%;
+position: fixed;  
+background-color: #fff;
+margin-left: 4%;
 }
 
 #menu_general li a {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  text-decoration: none;
-  font-size: 22px;
-  line-height: 25px;
-  color: brown;
-  justify-content: space-between;
-  flex-wrap: wrap;
+display: flex;
+align-items: center;
+align-content: center;
+text-decoration: none;
+font-size: 22px;
+line-height: 25px;
+color: brown;
+justify-content: space-between;
+flex-wrap: wrap;
 }
 
 #menu_general li ul {
-  height: 0;
-  overflow: hidden;
+height: 0;
+overflow: hidden;
 }
 
 #menu_general li:hover ul, #menu_general li:focus ul {
-  height: auto;
+height: auto;
 }
 
 #menu_general li:hover li a, #menu_general li:focus li a {
-  font-family: 'Marcellus SC';
-  font-size: 16px;
-  line-height: 5px;
+font-family: 'Marcellus SC';
+font-size: 16px;
+line-height: 5px;
 }
-
 
 /* Estilos del icono del menu*/
 
 .iconMenu1, .iconMenu2 {
-  width: 5%;
-  height: auto;
+width: 5%;
+height: auto;
 }
 
 /*Estilos del filtro */
 
 option {
-  font-size: 11px;
+font-size: 11px;
 }
 
 h1 {
-  font-size: 1.500em;
-  margin: 20px 20px 20px;
-  text-align: center;
+font-size: 1.500em;
+margin: 20px 20px 20px;
+text-align: center;
 }
 
 h2 {
-  font-size: 1.500em;
-  color: #ffffff;
-  text-align: center;
-  margin: 20px 10px;
-  margin-top: -14px;
+font-size: 1.500em;
+color: #ffffff;
+text-align: center;
+margin: 20px 10px;
+margin-top: -14px;
 }
 
 p {
-  font-size: 1.000em;
-  margin: 9px 20px;
+font-size: 1.000em;
+margin: 9px 20px;
+}
+
+li {
+list-style-type: none;
+}
+
+div > li {
+font-size: 1.000em;
+margin: 3px;
+margin-left: 38px;
+}
+
+/*Esto es para el buscador del menu principal*/
+
+.container-4{
+/* overflow: hidden; */
+/* width: 100%;
+height: 5.5%; */
+/* vertical-align: middle; */
+/* white-space: nowrap; */
+margin: 2.5% 0;
+display: flex;
+justify-content: center;
+}
+
+.container-4 input#search{
+width: 80%;
+height: 100%;
+margin-top: 0px;
+padding: 1em;
+background: cadetblue;
+border: none;
+font-size: 0.8em;
+color: #fff;
+padding-left: 15px;
+font-family: 'Marcellus SC';
+
+}
+
+.container-4 input#search::-webkit-input-placeholder {
+color: white;
+}
+
+.container-4 input#search:-moz-placeholder { /* Firefox 18- */
+color: #65737e;
+}
+
+.container-4 input#search::-moz-placeholder {  /* Firefox 19+ */
+color: #65737e;
+border: none;
+}
+
+.container-4 input#search:-ms-input-placeholder {
+color: #65737e;
+border: none;
+}
+
+.container-4 button.icon{
+-webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomright: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+border: none;
+background: #232833;
+width: 13%;
+height: 100%;
+/* height: 40px;
+/* width: 50px; */
+color: #4f5b66;
+opacity: 0;
+font-size: 15pt;
+margin-top: 0px;
+margin-left: -13%;
+ -webkit-transition: all .55s ease;
+-moz-transition: all .55s ease;
+-ms-transition: all .55s ease;
+-o-transition: all .55s ease;
+transition: all .55s ease;
+}
+
+.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+outline: none;
+opacity: 1;
+margin-left: -13%;
+
+}
+
+.container-4:hover button.icon:hover{
+background: white;
+}
+
+/*------ Estilos tarjetas personajes -----*/
+
+#show {
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center; 
+color: #ffffff;
+margin-left: 270px;
+}
+
+.pictureCharacter {
+display: inline-block;
+width: 200px;
+height: 270px;
+margin: 10%;
+
+}
+
+.card {
+width: 350px;
+height: 400px;
+padding: 20px;
+margin: 4px; 
+}
+
+.card-inside {
+position: relative;
+width: 80%;
+height: 100%;
+top: 40%;
+text-align: center;
+transition: transform 0.6s;
+transform-style: preserve-3d; 
+}
+
+.card-front, .card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+margin-top: -50%;
+
+}
+
+.card-front {
+background-color: gray;
+
+}
+
+.card-back {
+color: #fff ;
+transform: rotateY(180deg);
+background-color: #3a3a3a;
+text-align: left;
+  
+}
+
+.hide {
+  display: none;
+}
+
+.card:hover .card-inside{
+  transform: rotateY(180deg);
+}
+
+/* Tipografias */
+
+.fontNameCharacter{
+  font-family: 'Marcellus SC', serif;
+  font-size: 20px;
+  color: #050505;
+  
+}
+
+h1 {
+  font-size: 25px;
+  margin: 25px 20px 18px;
+  text-align: center;
+  font-family: 'Marcellus SC', serif;
+}
+
+
+/*p {
+  font-size: 18px;
+  margin: 15px 20px;
+  text-align: left;
 }
 
 li {
   list-style-type: none;
 }
 
+
 div > li {
-  font-size: 1.000em;
+  font-size: 16px;
   margin: 3px;
   margin-left: 38px;
-}
-
-/*Esto es para el buscador del menu principal*/
-
-.container-4{
-  /* overflow: hidden; */
-  /* width: 100%;
-  height: 5.5%; */
-  /* vertical-align: middle; */
-  /* white-space: nowrap; */
-  margin: 2.5% 0;
-  display: flex;
-  justify-content: center;
-}
-
-.container-4 input#search{
-  width: 80%;
-  height: 100%;
-  margin-top: 0px;
-  padding: 1em;
-  background: cadetblue;
-  border: none;
-  font-size: 0.8em;
-  color: #fff;
-  padding-left: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  font-family: 'Marcellus SC';
-  
-}
-
-.container-4 input#search::-webkit-input-placeholder {
-  color: white;
-}
-
-.container-4 input#search:-moz-placeholder { /* Firefox 18- */
-  color: #65737e;
-}
-
-.container-4 input#search::-moz-placeholder {  /* Firefox 19+ */
-  color: #65737e;
-}
-
-.container-4 input#search:-ms-input-placeholder {
-  color: #65737e;
-}
-
-.container-4 button.icon{
-  -webkit-border-top-right-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  -moz-border-radius-bottomright: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border: none;
-  background: #232833;
-  width: 13%;
-  height: 100%;
-  /* height: 40px;
-  /* width: 50px; */
-  color: #4f5b66;
-  opacity: 0;
-  font-size: 9pt;
-  margin-top: 0px;
-  margin-left: -13%;
-   -webkit-transition: all .55s ease;
-  -moz-transition: all .55s ease;
-  -ms-transition: all .55s ease;
-  -o-transition: all .55s ease;
-  transition: all .55s ease;
-}
-
-.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
-  outline: none;
-  opacity: 1;
-  margin-left: -13%;
-}
-
-.container-4:hover button.icon:hover{
-  background: white;
-}
-
-
- /*------ Estilos tarjetas personajes -----*/
-
-#show {
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; 
-  color: #ffffff;
-  margin-left: 270px;
-}
-
-.pictureCharacter {
-  display: inline-block;
-  width: 200px;
-  height: 270px;
-  margin: 10%;
-  
-}
-
-.card {
-  width: 350px;
-  height: 400px;
-  padding: 20px;
-  margin: 4px; 
-}
-
-.card-inside {
-  position: relative;
-  width: 80%;
-  height: 100%;
-  top: 40%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d; 
-}
-
-.card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  margin-top: -50%;
-  
-}
-
-.card-front {
-  background-color: gray;
-  
-}
-
-.card-back {
-  color: #fff ;
-  transform: rotateY(180deg);
-  background-color: #3a3a3a;
-  text-align: left;
-    
-}
-
-.hide {
-    display: none;
-  }
-  
-.card:hover .card-inside{
-    transform: rotateY(180deg);
-  }
-
-/* Tipografias */
-
-.fontNameCharacter{
-    font-family: 'Marcellus SC', serif;
-    font-size: 20px;
-    color: #050505;
-    
-}
-
-h1 {
-    font-size: 25px;
-    margin: 25px 20px 18px;
-    text-align: center;
-    font-family: 'Marcellus SC', serif;
-}
-  
-
-/*p {
-    font-size: 18px;
-    margin: 15px 20px;
-    text-align: left;
-}
-  
-  li {
-    list-style-type: none;
-}
-  
-
-  div > li {
-    font-size: 16px;
-    margin: 3px;
-    margin-left: 38px;
 }
 /* Barra de busqueda */
 
 /*.searchbar {
-  background-color: #f3f3f3;
-  color: #000000;
-  width: 20%;
-  height: 20%;
-  margin: 20px 5px 5px -1px;
-  padding: 8px 8px;
-  font-family: 'Marcellus SC', serif;
-  font-size: 12px;
-  font-weight: bold;
-  
-  border-radius: 10px;
+background-color: #f3f3f3;
+color: #000000;
+width: 20%;
+height: 20%;
+margin: 20px 5px 5px -1px;
+padding: 8px 8px;
+font-family: 'Marcellus SC', serif;
+font-size: 12px;
+font-weight: bold;
+
+border-radius: 10px;
+}
+
+.icon-search {
+cursor: pointer;
+color: #000000;
+margin-top: -36px;
+font-size: 24px;
+left: 32%;
+position: absolute;
+z-index: 1;
+}
+
+.fab {
+  font-family:  'Marcellus SC', serif;
+}
+
+
+/* Categorias */
+
+/*.menu{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+a {
+color:rgb(0, 0, 0);
+font-weight: 300;
+text-decoration: none;
+margin-right: 30px;
+display: inline block;
+font-size: 20px;
+font-family: 'Marcellus SC', serif;
 }
 
 .icon-search {
@@ -328,167 +359,130 @@ h1 {
     font-family:  'Marcellus SC', serif;
 }
 
+/*Responsive*/
 
-
-/* Categorias */
-
-/*.menu{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+@media (max-width:360px){
+  .boton{
+    height: 10%;
+    width: 18%;
+    margin-left: 5%;
+    margin-top: -2%;
 }
 
-a {
-  color:rgb(0, 0, 0);
-  font-weight: 300;
-  text-decoration: none;
-  margin-right: 30px;
-  display: inline block;
-  font-size: 20px;
+.card-front, .card-back {
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  backface-visibility: hidden;
+}
+
+.pictureCharacter {
+  display: inline-block;
+  width: 130px;
+  height: 170px;
+  margin: 10%;
+}
+
+h1 {
+  font-size: 15px;
+  margin: 25px 20px 18px;
+  text-align: center;
   font-family: 'Marcellus SC', serif;
-  }
-
-  .icon-search {
-    cursor: pointer;
-    color: #000000;
-    margin-top: -36px;
-    font-size: 24px;
-    left: 32%;
-    position: absolute;
-    z-index: 1;
-  }
-  
-  
-  .fab {
-      font-family:  'Marcellus SC', serif;
-  }
-
-  /*Responsive*/
-
-  @media (max-width:360px){
-    .boton{
-      height: 10%;
-      width: 18%;
-      margin-left: 5%;
-      margin-top: -2%;
 }
 
-  .card-front, .card-back {
-    position: absolute;
-    width: 60%;
-    height: 70%;
-    backface-visibility: hidden;
+p {
+  font-size: 12px;
+  margin: 5px 20px;
+  text-align: left;
 }
 
-  .pictureCharacter {
-    display: inline-block;
-    width: 130px;
-    height: 170px;
-    margin: 10%;
+li {
+list-style-type: none;
 }
-
-  h1 {
-    font-size: 15px;
-    margin: 25px 20px 18px;
-    text-align: center;
-    font-family: 'Marcellus SC', serif;
-}
-
-
-  p {
-    font-size: 12px;
-    margin: 5px 20px;
-    text-align: left;
-}
-
-  li {
-  list-style-type: none;
-}
-
 
 div > li {
-  font-size: 10px;
-  margin: 3px;
-  margin-left: 38px;
+font-size: 10px;
+margin: 3px;
+margin-left: 38px;
 }
 .menu{
-  height: 50%;
-  display: list-item;
-  margin-left: 10%;
-  list-style: none;
-  margin-top: 10%;
-  margin-bottom: -20%;
- 
+height: 50%;
+display: list-item;
+margin-left: 10%;
+list-style: none;
+margin-top: 10%;
+margin-bottom: -20%;
+
 }
 
 a {
-  color:rgb(0, 0, 0);
-  font-weight: 300;
-  text-decoration: none;
-  margin-right: 10px;
-  display: inline block;
-  font-size: 20px;
-  font-family: 'Marcellus SC', serif;
+color:rgb(0, 0, 0);
+font-weight: 300;
+text-decoration: none;
+margin-right: 10px;
+display: inline block;
+font-size: 20px;
+font-family: 'Marcellus SC', serif;
 
-  }
-
-  .icon-search {
-    cursor: pointer;
-    color: #000000;
-    font-size: 20px;
-    left: 70%;
-    position: absolute;
-    z-index: 1;
-    margin-top: -3%;
-  }
-
-  .searchbar {
-    background-color: #f3f3f3;
-    color: #000000;
-    width: 75%;
-    height: 20%;
-    margin: 20px 5px 10px -1px;
-    padding: 8px 8px;
-    font-family: 'Marcellus SC', serif;
-    font-size: 12px;
-    font-weight: bold;
-    border: #000000 solid 1px;
-    border-radius: 10px;
-    margin-bottom: 10%;
-  
-    
-  }
-  
-  
-  .fab {
-      font-family:  'Marcellus SC', serif;
-  }
 }
-/*
 
-  @media (max-width:768px){
-    .boton{
-      height: 18%;
-      width: 15%;
-      margin-left: 9%; 
-      margin-top: 0%;
-  
-  }
- 
-  .icon-search {
-    cursor: pointer;
-    color: #000000;
-    margin-top: -36px;
-    font-size: 24px;
-    left: 30%;
-    position: absolute;
-    z-index: 1;
+.icon-search {
+  cursor: pointer;
+  color: #000000;
+  font-size: 20px;
+  left: 70%;
+  position: absolute;
+  z-index: 1;
+  margin-top: -3%;
 }
 
 .searchbar {
-  width: 30%;
-  height: 30%;
+  background-color: #f3f3f3;
+  color: #000000;
+  width: 75%;
+  height: 20%;
+  margin: 20px 5px 10px -1px;
+  padding: 8px 8px;
+  font-family: 'Marcellus SC', serif;
+  font-size: 12px;
+  font-weight: bold;
+  border: #000000 solid 1px;
+  border-radius: 10px;
+  margin-bottom: 10%;
+
+  
+}
+
+
+.fab {
+    font-family:  'Marcellus SC', serif;
+}
+}
+/*
+
+@media (max-width:768px){
+  .boton{
+    height: 18%;
+    width: 15%;
+    margin-left: 9%; 
+    margin-top: 0%;
 
 }
- }
- */
+
+.icon-search {
+  cursor: pointer;
+  color: #000000;
+  margin-top: -36px;
+  font-size: 24px;
+  left: 30%;
+  position: absolute;
+  z-index: 1;
+}
+
+.searchbar {
+width: 30%;
+height: 30%;
+
+}
+}
+*/
