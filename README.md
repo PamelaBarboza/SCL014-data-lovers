@@ -21,3 +21,5 @@ https://www.figma.com/proto/sixLWEtZ7ptFu0LEzR2FJf/HARRY-POTTER?node-id=48%3A220
   <img src="Prototipos/trello_dos.jpg" width="350" title="Sketch Inicial">
 </p>
 
+PRIMER HISTORIA DE USUARIO: https://pamelabarboza.github.io/SCL014-data-lovers/src/index.html
+

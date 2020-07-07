@@ -17,7 +17,43 @@
       <img class="banner" src="./img/banner2.jpg">    
     </div>
 
-    <div class="menu">
+    <nav id="menu_general">
+      <img src="img\LOGO ALTERNO HPW.png" class="alternLogoMenu">
+
+      <div class="container-4">
+        <input type="search" id="search" placeholder="Busca por nombre del personaje" />
+        <button class="icon"><i class="fa fa-search"></i></button>
+      </div>
+
+      <ul id="principalMenuList">
+        <li class="principalMenuCategorie"><a href="#" id="wandsMenu">Varitas
+        </a></li>
+        <li id="spellsMenu" class="principalMenuCategorie"><a href="#">Hechizos
+        </a></li>
+        <li class="principalMenuCategorie"><a href="#">Casas<img src="img\plus-menu.png" class="iconMenu2">
+        </a>
+      <ul>
+        <li id="subOption1" data-value="Gryffindor"><a href="#">Gryffindor</a></li>
+        <li id="subOption2" data-value="Slytherin"><a href="#">Slytherin</a></li>
+        <li id="subOption3" data-value="Hufflepuff"><a href="#">Hufflepuff</a></li>
+        <li id="subOption4" data-value="Ravenclaw"><a href="#">Ravenclaw</a></li>
+      </ul>
+    </li>
+        <li class="principalMenuCategorie"><a href="#">Rol <img src="img\plus-menu.png" class="iconMenu1">
+            </a>
+          <ul>
+            <li><a href="#" id="subOption5">Profesores</a></li>
+            <li><a href="#" id="subOption6">Estudiantes</a></li>
+          </ul>
+        </li>
+        
+        
+        
+      </ul>
+      
+    </nav>
+    <div id="show"></div>
+    <!-----<div class="menu">
     <input id="searchBar" class="searchbar" type="text" placeholder="Buscar...">
     
     <nav class="nav" id="nav">
@@ -27,11 +63,11 @@
       <a href="">Rol</a>
     </nav>
   </div>
-  <i class="fab fa-searchengin icon-search"></i>
+  <i class="fab fa-searchengin icon-search"></i>-->
 
-    <div>
-      <div id="show"></div>
-    </div> 
+    
+     
+    
   
      <div id="root"></div>
     <script src="main.js" type="module"></script>
