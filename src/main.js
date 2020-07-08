@@ -37,3 +37,33 @@ const showMainPotterCharacters = (data) => {
 const show = document.getElementById('show');
 
 show.innerHTML = showMainPotterCharacters(POTTER);
+
+const wandsMenu = document.getElementById('wandsMenu');
+wandsMenu.addEventListener('click', () => {
+});
+
+const spellsMenu = document.getElementById('spellsMenu');
+spellsMenu.addEventListener('click', () => {
+});
+const subOption1 = document.getElementById('subOption1');
+subOption1.addEventListener('click', () => {
+});
+
+const subOption2 = document.getElementById('subOption2');
+subOption2.addEventListener('click', () => {
+});
+const subOption3 = document.getElementById('subOption3');
+subOption3.addEventListener('click', () => {
+});
+
+const subOption4 = document.getElementById('subOption4');
+subOption4.addEventListener('click', () => {
+});
+
+const subOption5 = document.getElementById('subOption5');
+subOption5.addEventListener('click', () => {
+});
+
+const subOption6 = document.getElementById('subOption6');
+subOption6.addEventListener('click', () => {
+});
