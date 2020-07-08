@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-/* import { example } from './data.js'; */
+import { filterWands } from './data.js';
 import POTTER from './data/potter/potter.js';
 
 console.log(POTTER);
@@ -16,7 +16,6 @@ const showMainPotterCharacters = (data) => {
           <img src = '${obj.image}' alt = "Image" class="pictureCharacter"/>
           <h2 class="fontNameCharacter">${obj.name}</h2>
         </div>
-        
         <div class="card-back">
           <h1>${obj.name}</h1>
           <p>Casa: ${obj.house}</p>
@@ -38,9 +37,14 @@ const show = document.getElementById('show');
 
 show.innerHTML = showMainPotterCharacters(POTTER);
 
+// Función que muestra las varitas
 const wandsMenu = document.getElementById('wandsMenu');
 wandsMenu.addEventListener('click', () => {
+  const arrWands = filterWands(POTTER);
+  document.getElementById('insertWands').innerHTML = showMainPotterCharacters(arrWands);
+  console.log(arrWands);
 });
+
 
 const spellsMenu = document.getElementById('spellsMenu');
 spellsMenu.addEventListener('click', () => {
