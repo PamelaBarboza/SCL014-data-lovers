@@ -43,6 +43,7 @@ height: 100%;
 position: fixed;  
 background-color: #fff;
 margin-left: 4%;
+margin-top: 2.5%;
 }
 
 #menu_general li a {
@@ -147,6 +148,41 @@ border: none;
 font-size: 15pt;
 margin-top: 0px;
 }
+
+
+/*Estilos del filtro */
+
+#filterCategories {
+  text-align: end;
+}
+
+#filterSelection {
+  background: #336f8f;
+  border-radius: 7px;
+  border-color: #659dbf;
+  color: #ffffff;
+  padding: 5px;
+  margin: 20px 20px;
+}
+
+option {
+  font-size: 11px;
+}
+
+#filterStudents, #filterStaff, #filterGryffindor, #filterSlytherin {
+  text-align: end;
+}
+
+#secondFilter, #thirdFilter, #fourthFilter, #fifthFilter {
+  text-align: center;
+  background: #300E4A;
+  border-radius: 7px;
+  border-color: #300e4a;
+  color: #ffffff;
+  padding: 5px;
+  margin: 2%;
+}
+
 
 /*------ Estilos tarjetas personajes -----*/
 
