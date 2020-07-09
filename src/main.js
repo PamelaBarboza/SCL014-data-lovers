@@ -1,5 +1,6 @@
+/* eslint-disable import/named */
 /* eslint-disable no-console */
-import { filterWands, filterSpells } from './data.js';
+import { filterWands, filterSpells, filterPotterHouse } from './data.js';
 import POTTER from './data/potter/potter.js';
 
 console.log(POTTER);
@@ -56,10 +57,17 @@ spellsMenu.addEventListener('click', () => {
 // Función que muestra la casa G
 const subOption1 = document.getElementById('subOption1');
 subOption1.addEventListener('click', () => {
+  const filterGryff = filterPotterHouse(POTTER);
+  document.getElementById('filterGryffindor').innerHTML = showMainPotterCharacters(filterGryff);
+  console.log(filterGryff);
 });
+
 // Función que muestra la casa S
 const subOption2 = document.getElementById('subOption2');
 subOption2.addEventListener('click', () => {
+  const filterGryff = filterPotterHouse(POTTER);
+  document.getElementById('filterGryffindor').innerHTML = showMainPotterCharacters(filterGryff);
+  console.log(filterGryff);
 });
 
 // Función que muestra la casa H
