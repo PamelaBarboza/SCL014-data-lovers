@@ -67,7 +67,6 @@ spellsMenu.addEventListener('click', () => {
 
   const arrSpells = filterSpells(POTTER);
   document.getElementById('insertPotterSpells').innerHTML = showMainPotterCharacters(arrSpells);
-
 });
 
 // Función que muestra la casa G
@@ -116,7 +115,6 @@ filterHHufflepuff.addEventListener('click', () => {
 
   const filterHuff = filterPotterHouse(POTTER, valueHufflepuff);
   document.getElementById('insertPotterHufflepuff').innerHTML = showMainPotterCharacters(filterHuff);
-
 });
 
 // Función que muestra la casa R
