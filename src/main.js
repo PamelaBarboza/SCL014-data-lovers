@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable no-undef */
 /* eslint-disable import/named */
 /* eslint-disable no-console */
 import { filterWands, filterSpells, filterPotterHouse } from './data.js';
@@ -41,9 +43,11 @@ show.innerHTML = showMainPotterCharacters(POTTER);
 // Función que muestra las varitas
 const wandsMenu = document.getElementById('wandsMenu');
 wandsMenu.addEventListener('click', () => {
+  containerShow.style.display = 'none';
+  wandsContainer.style.display = 'block';
+
   const arrWands = filterWands(POTTER);
   document.getElementById('insertWands').innerHTML = showMainPotterCharacters(arrWands);
-  console.log(arrWands);
 });
 
 // Función que muestra los Hechizos

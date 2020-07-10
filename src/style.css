@@ -168,7 +168,7 @@ option {
 
 /*------ Estilos tarjetas personajes -----*/
 
-#show {
+#show, #insertWands{
 
 display: flex;
 flex-direction: row;
@@ -177,6 +177,8 @@ justify-content: center;
 color: #ffffff;
 margin-left: 270px;
 }
+
+
 
 .pictureCharacter {
 display: inline-block;
