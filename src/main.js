@@ -45,6 +45,10 @@ const wandsMenu = document.getElementById('wandsMenu');
 wandsMenu.addEventListener('click', () => {
   containerShow.style.display = 'none';
   wandsContainer.style.display = 'block';
+  potterSpells.style.display = 'none';
+  potterGryffindor.style.display = 'none';
+  potterSlytherin.style.display = 'none';
+  potterHufflepuff.style.display = 'none';
 
   const arrWands = filterWands(POTTER);
   document.getElementById('insertWands').innerHTML = showMainPotterCharacters(arrWands);
@@ -53,15 +57,30 @@ wandsMenu.addEventListener('click', () => {
 // Función que muestra los Hechizos
 const spellsMenu = document.getElementById('spellsMenu');
 spellsMenu.addEventListener('click', () => {
+  containerShow.style.display = 'none';
+  wandsContainer.style.display = 'none';
+  potterSpells.style.display = 'block';
+  potterGryffindor.style.display = 'none';
+  potterSlytherin.style.display = 'none';
+  potterHufflepuff.style.display = 'none';
+
+
   const arrSpells = filterSpells(POTTER);
   document.getElementById('insertPotterSpells').innerHTML = showMainPotterCharacters(arrSpells);
-  console.log(arrSpells);
+
 });
 
 // Función que muestra la casa G
 const valuePotterGryffindor = document.getElementById('subOption1').getAttribute('data-value');
 const filterHGryffindor = document.getElementById('subOption1');
 filterHGryffindor.addEventListener('click', () => {
+  containerShow.style.display = 'none';
+  wandsContainer.style.display = 'none';
+  potterSpells.style.display = 'none';
+  potterGryffindor.style.display = 'block';
+  potterSlytherin.style.display = 'none';
+  potterHufflepuff.style.display = 'none';
+
   const filterGryff = filterPotterHouse(POTTER, valuePotterGryffindor);
   document.getElementById('filterGryffindor').innerHTML = showMainPotterCharacters(filterGryff);
 });
@@ -71,18 +90,33 @@ filterHGryffindor.addEventListener('click', () => {
 const valueSlytherin = document.getElementById('subOption2').getAttribute('data-value');
 const filterHSlytherin = document.getElementById('subOption2');
 filterHSlytherin.addEventListener('click', () => {
+  containerShow.style.display = 'none';
+  wandsContainer.style.display = 'none';
+  potterSpells.style.display = 'none';
+  potterGryffindor.style.display = 'none';
+  potterSlytherin.style.display = 'block';
+  potterHufflepuff.style.display = 'none';
+
+
   const filterSly = filterPotterHouse(POTTER, valueSlytherin);
   document.getElementById('filterSlytherin').innerHTML = showMainPotterCharacters(filterSly);
-  console.log(filterSly);
 });
 
 // Función que muestra la casa H
 const valueHufflepuff = document.getElementById('subOption3').getAttribute('data-value');
 const filterHHufflepuff = document.getElementById('subOption3');
 filterHHufflepuff.addEventListener('click', () => {
+  containerShow.style.display = 'none';
+  wandsContainer.style.display = 'none';
+  potterSpells.style.display = 'none';
+  potterGryffindor.style.display = 'none';
+  potterSlytherin.style.display = 'none';
+  potterHufflepuff.style.display = 'block';
+
+
   const filterHuff = filterPotterHouse(POTTER, valueHufflepuff);
   document.getElementById('insertPotterHufflepuff').innerHTML = showMainPotterCharacters(filterHuff);
-  console.log(filterHuff);
+
 });
 
 // Función que muestra la casa R
