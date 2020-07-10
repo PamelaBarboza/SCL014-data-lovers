@@ -55,29 +55,41 @@ spellsMenu.addEventListener('click', () => {
 });
 
 // Función que muestra la casa G
-const subOption1 = document.getElementById('subOption1');
-subOption1.addEventListener('click', () => {
-  const filterGryff = filterPotterHouse(POTTER);
+const valuePotterGryffindor = document.getElementById('subOption1').getAttribute('data-value');
+const filterHGryffindor = document.getElementById('subOption1');
+filterHGryffindor.addEventListener('click', () => {
+  const filterGryff = filterPotterHouse(POTTER, valuePotterGryffindor);
   document.getElementById('filterGryffindor').innerHTML = showMainPotterCharacters(filterGryff);
-  console.log(filterGryff);
 });
 
+
 // Función que muestra la casa S
-const subOption2 = document.getElementById('subOption2');
-subOption2.addEventListener('click', () => {
-  const filterGryff = filterPotterHouse(POTTER);
-  document.getElementById('filterGryffindor').innerHTML = showMainPotterCharacters(filterGryff);
-  console.log(filterGryff);
+const valueSlytherin = document.getElementById('subOption2').getAttribute('data-value');
+const filterHSlytherin = document.getElementById('subOption2');
+filterHSlytherin.addEventListener('click', () => {
+  const filterSly = filterPotterHouse(POTTER, valueSlytherin);
+  document.getElementById('filterSlytherin').innerHTML = showMainPotterCharacters(filterSly);
+  console.log(filterSly);
 });
 
 // Función que muestra la casa H
-const subOption3 = document.getElementById('subOption3');
-subOption3.addEventListener('click', () => {
+const valueHufflepuff = document.getElementById('subOption3').getAttribute('data-value');
+const filterHHufflepuff = document.getElementById('subOption3');
+filterHHufflepuff.addEventListener('click', () => {
+  const filterHuff = filterPotterHouse(POTTER, valueHufflepuff);
+  document.getElementById('insertPotterHufflepuff').innerHTML = showMainPotterCharacters(filterHuff);
+  console.log(filterHuff);
 });
+
 // Función que muestra la casa R
-const subOption4 = document.getElementById('subOption4');
-subOption4.addEventListener('click', () => {
+const valueRavenclaw = document.getElementById('subOption4').getAttribute('data-value');
+const filterHRavenclaw = document.getElementById('subOption4');
+filterHRavenclaw.addEventListener('click', () => {
+  const filterRav = filterPotterHouse(POTTER, valueRavenclaw);
+  document.getElementById('insertPotterRavenclaw').innerHTML = showMainPotterCharacters(filterRav);
+  console.log(filterRav);
 });
+
 // Función que muestra Profesores
 const subOption5 = document.getElementById('subOption5');
 subOption5.addEventListener('click', () => {
