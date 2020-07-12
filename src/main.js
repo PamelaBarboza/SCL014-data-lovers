@@ -2,7 +2,10 @@
 /* eslint-disable no-undef */
 /* eslint-disable import/named */
 /* eslint-disable no-console */
-import { filterWands, filterSpells, filterPotterHouse } from './data.js';
+import {
+  // eslint-disable-next-line max-len
+  filterWands, filterSpells, filterPotterHouse, filterHogwartsStaff, filterHogwartsStudents, searchCharacters,
+} from './data.js';
 import POTTER from './data/potter/potter.js';
 
 console.log(POTTER);
@@ -49,6 +52,10 @@ wandsMenu.addEventListener('click', () => {
   potterGryffindor.style.display = 'none';
   potterSlytherin.style.display = 'none';
   potterHufflepuff.style.display = 'none';
+  potterRavenclaw.style.display = 'none';
+  potterStaff.style.display = 'none';
+  potterStudents.style.display = 'none';
+
 
   const arrWands = filterWands(POTTER);
   document.getElementById('insertWands').innerHTML = showMainPotterCharacters(arrWands);
@@ -63,11 +70,14 @@ spellsMenu.addEventListener('click', () => {
   potterGryffindor.style.display = 'none';
   potterSlytherin.style.display = 'none';
   potterHufflepuff.style.display = 'none';
-
+  potterRavenclaw.style.display = 'none';
+  potterStaff.style.display = 'none';
+  potterStudents.style.display = 'none';
 
   const arrSpells = filterSpells(POTTER);
   document.getElementById('insertPotterSpells').innerHTML = showMainPotterCharacters(arrSpells);
 });
+
 
 // Función que muestra la casa G
 const valuePotterGryffindor = document.getElementById('subOption1').getAttribute('data-value');
@@ -79,6 +89,10 @@ filterHGryffindor.addEventListener('click', () => {
   potterGryffindor.style.display = 'block';
   potterSlytherin.style.display = 'none';
   potterHufflepuff.style.display = 'none';
+  potterRavenclaw.style.display = 'none';
+  potterStaff.style.display = 'none';
+  potterStudents.style.display = 'none';
+
 
   const filterGryff = filterPotterHouse(POTTER, valuePotterGryffindor);
   document.getElementById('filterGryffindor').innerHTML = showMainPotterCharacters(filterGryff);
@@ -95,7 +109,9 @@ filterHSlytherin.addEventListener('click', () => {
   potterGryffindor.style.display = 'none';
   potterSlytherin.style.display = 'block';
   potterHufflepuff.style.display = 'none';
-
+  potterRavenclaw.style.display = 'none';
+  potterStaff.style.display = 'none';
+  potterStudents.style.display = 'none';
 
   const filterSly = filterPotterHouse(POTTER, valueSlytherin);
   document.getElementById('filterSlytherin').innerHTML = showMainPotterCharacters(filterSly);
@@ -111,6 +127,9 @@ filterHHufflepuff.addEventListener('click', () => {
   potterGryffindor.style.display = 'none';
   potterSlytherin.style.display = 'none';
   potterHufflepuff.style.display = 'block';
+  potterRavenclaw.style.display = 'none';
+  potterStaff.style.display = 'none';
+  potterStudents.style.display = 'none';
 
 
   const filterHuff = filterPotterHouse(POTTER, valueHufflepuff);
@@ -121,16 +140,77 @@ filterHHufflepuff.addEventListener('click', () => {
 const valueRavenclaw = document.getElementById('subOption4').getAttribute('data-value');
 const filterHRavenclaw = document.getElementById('subOption4');
 filterHRavenclaw.addEventListener('click', () => {
+  containerShow.style.display = 'none';
+  wandsContainer.style.display = 'none';
+  potterSpells.style.display = 'none';
+  potterGryffindor.style.display = 'none';
+  potterSlytherin.style.display = 'none';
+  potterHufflepuff.style.display = 'none';
+  potterRavenclaw.style.display = 'block';
+  potterStaff.style.display = 'none';
+  potterStudents.style.display = 'none';
+
   const filterRav = filterPotterHouse(POTTER, valueRavenclaw);
   document.getElementById('insertPotterRavenclaw').innerHTML = showMainPotterCharacters(filterRav);
-  console.log(filterRav);
 });
 
 // Función que muestra Profesores
 const subOption5 = document.getElementById('subOption5');
 subOption5.addEventListener('click', () => {
+  containerShow.style.display = 'none';
+  wandsContainer.style.display = 'none';
+  potterSpells.style.display = 'none';
+  potterGryffindor.style.display = 'none';
+  potterSlytherin.style.display = 'none';
+  potterHufflepuff.style.display = 'none';
+  potterRavenclaw.style.display = 'none';
+  potterStaff.style.display = 'block';
+  potterStudents.style.display = 'none';
+
+  const arrStaff = filterHogwartsStaff(POTTER);
+  document.getElementById('filterStaff').innerHTML = showMainPotterCharacters(arrStaff);
 });
+
+
 // Función que muestra la casa Estudiantes
 const subOption6 = document.getElementById('subOption6');
 subOption6.addEventListener('click', () => {
+  containerShow.style.display = 'none';
+  wandsContainer.style.display = 'none';
+  potterSpells.style.display = 'none';
+  potterGryffindor.style.display = 'none';
+  potterSlytherin.style.display = 'none';
+  potterHufflepuff.style.display = 'none';
+  potterRavenclaw.style.display = 'none';
+  potterStaff.style.display = 'none';
+  potterStudents.style.display = 'block';
+
+  const arrStudents = filterHogwartsStudents(POTTER);
+  document.getElementById('filterStudents').innerHTML = showMainPotterCharacters(arrStudents);
+  console.log(arrStudents);
+});
+
+
+// Función que muestra los resultados de búsqueda en tiempo real
+const text = document.querySelector('#search');
+text.addEventListener('keyup', () => {
+  searchContainer.style.display = 'block';
+  containerShow.style.display = 'none';
+  wandsContainer.style.display = 'none';
+  potterSpells.style.display = 'none';
+  potterGryffindor.style.display = 'none';
+  potterSlytherin.style.display = 'none';
+  potterHufflepuff.style.display = 'none';
+  potterRavenclaw.style.display = 'none';
+  potterStaff.style.display = 'none';
+  potterStudents.style.display = 'none';
+
+
+  const arrSearchCharacter = searchCharacters(POTTER, text.value);
+  if (arrSearchCharacter.length > 0) {
+    searchResults.innerHTML = showMainPotterCharacters(arrSearchCharacter);
+  } else {
+    searchResults.innerHTML = 'No se encontraron resultados';
+  }
+
 });

@@ -28,3 +28,31 @@ export const filterPotterHouse = (array, string) => {
   }
   return arrayHouses.filter(obj => obj.house === 'Ravenclaw');
 };
+
+
+// Función que filtra staff
+export const filterHogwartsStaff = (array) => {
+  const arrayByStaff = [...array];
+  const newArrayByStaff = arrayByStaff.filter(obj => (obj).hogwartsStaff === true);
+  return newArrayByStaff;
+};
+
+// Función que filtra estudiantes
+export const filterHogwartsStudents = (array) => {
+  const arrayByStudent = [...array];
+  const newArrayByStudent = arrayByStudent.filter(obj => (obj).hogwartsStudent === true);
+  return newArrayByStudent;
+};
+
+// Función que busca personajes
+export const searchCharacters = (array, string) => {
+  const arrOfSearch = [...array];
+  const newArrOfSearch = arrOfSearch.filter(obj => obj.name
+    .indexOf(string[0].toUpperCase() + string.slice(1).toLowerCase()) > -1);
+  return newArrOfSearch;
+};
+
+export const searchName = (data, name) => {
+  const search = data.filter(obj => (obj.name.toLowerCase().indexOf(name.toLowerCase()) > -1));
+  return search;
+};
