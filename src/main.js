@@ -212,5 +212,4 @@ text.addEventListener('keyup', () => {
   } else {
     searchResults.innerHTML = 'No se encontraron resultados';
   }
-
 });
