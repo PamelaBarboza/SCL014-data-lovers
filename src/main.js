@@ -240,6 +240,15 @@ subOption6.addEventListener('click', () => {
   document.getElementById('filterStudents').innerHTML = showMainPotterCharacters(arrStudents);
 });
 
+/*// Función que ordena alfabéticamente y por género
+const filterSelection = document.querySelector('#filterSelection');
+
+// Función que muestra personajes por orden a-z, z-a y género
+filterSelection.addEventListener('change', () => {
+  const arrByNameOrGender = orderByNameAndGender(POTTER, filterSelection.value);
+  insertPotterCharacter.innerHTML = showMainPotterCharacters(arrByNameOrGender);
+});*/
+
 
 // Función que muestra los resultados de búsqueda en tiempo real
 const text = document.querySelector('#search');
@@ -263,3 +272,17 @@ text.addEventListener('keyup', () => {
     searchResults.innerHTML = 'No se encontraron resultados';
   }
 });
+
+/*// Filtro 'Gender'
+function selectGender() {
+  document.querySelector('#house').value = '';
+  document.querySelector('#role').value = '';
+  const genderFilter = gender.value;
+  const genderElement = filterGender(genderFilter);
+  container.innerHTML = '';
+  showData(genderElement);
+}
+
+house.addEventListener('change', selectHouse);
+role.addEventListener('change', selectRole);
+gender.addEventListener('change', selectGender);*/
