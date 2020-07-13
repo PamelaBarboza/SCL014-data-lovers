@@ -16,8 +16,12 @@ export const filterSpells = (array) => {
   return arraySpells.filter(obj => obj.patronus !== '');
 };
 
-// Función que filtra personajes por casay
+// Función que filtra personajes por casa
 export const filterPotterHouse = (array, string) => {
+  const arrayHouses = array.filter(obj => obj.house === string);
+  return arrayHouses;
+
+  /*
   const arrayHouses = [...array];
   if (string === 'Gryffindor') {
     return arrayHouses.filter(obj => obj.house === 'Gryffindor');
@@ -27,6 +31,7 @@ export const filterPotterHouse = (array, string) => {
     return arrayHouses.filter(obj => obj.house === 'Hufflepuff');
   }
   return arrayHouses.filter(obj => obj.house === 'Ravenclaw');
+  */
 };
 
 
@@ -50,9 +55,4 @@ export const searchCharacters = (array, string) => {
   const newArrOfSearch = arrOfSearch.filter(obj => obj.name
     .indexOf(string[0].toUpperCase() + string.slice(1).toLowerCase()) > -1);
   return newArrOfSearch;
-};
-
-export const searchName = (data, name) => {
-  const search = data.filter(obj => (obj.name.toLowerCase().indexOf(name.toLowerCase()) > -1));
-  return search;
 };

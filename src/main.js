@@ -134,6 +134,7 @@ filterHHufflepuff.addEventListener('click', () => {
 
   const filterHuff = filterPotterHouse(POTTER, valueHufflepuff);
   document.getElementById('insertPotterHufflepuff').innerHTML = showMainPotterCharacters(filterHuff);
+
 });
 
 // Función que muestra la casa R
@@ -187,7 +188,7 @@ subOption6.addEventListener('click', () => {
 
   const arrStudents = filterHogwartsStudents(POTTER);
   document.getElementById('filterStudents').innerHTML = showMainPotterCharacters(arrStudents);
-  console.log(arrStudents);
+
 });
 
 
