@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 /* eslint-disable no-shadow */
 /* eslint-disable no-undef */
 /* eslint-disable import/named */
@@ -43,6 +44,32 @@ const show = document.getElementById('show');
 
 show.innerHTML = showMainPotterCharacters(POTTER);
 
+// Función que crea cards mostrando descripción de varitas
+const characterWands = (data) => {
+  let templatePotter = '';
+  data.map((obj) => {
+    templatePotter += `
+    <div class="card">
+    <div class="card-inside">
+      <div class="card-front">
+      <img src="${obj.image}" alt="Image" class="pictureCharacter"/>
+      <h2 class="fontNameCharacter">${obj.name}</h2>
+      <div class="card-back">
+      </div>
+        <h1>${obj.name}</h1>
+        <p>Varita:</p>
+        <li>Madera: ${obj.wand.wood}</li>
+        <li>Núcleo: ${obj.wand.core}</li>
+        <li>Largo: ${obj.wand.length}</li>
+      </div>
+    </div>
+    </div>
+    `;
+    return templatePotter;
+  });
+  return templatePotter;
+};
+
 // Función que muestra las varitas
 const wandsMenu = document.getElementById('wandsMenu');
 wandsMenu.addEventListener('click', () => {
@@ -55,11 +82,12 @@ wandsMenu.addEventListener('click', () => {
   potterRavenclaw.style.display = 'none';
   potterStaff.style.display = 'none';
   potterStudents.style.display = 'none';
-
+  text.value = '';
 
   const arrWands = filterWands(POTTER);
-  document.getElementById('insertWands').innerHTML = showMainPotterCharacters(arrWands);
+  document.querySelector('#insertWands').innerHTML = characterWands(arrWands);
 });
+
 
 // Función que muestra los Hechizos
 const spellsMenu = document.getElementById('spellsMenu');
