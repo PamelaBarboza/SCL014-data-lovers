@@ -27,7 +27,7 @@ const showMainPotterCharacters = (data) => {
           <h1>${obj.name}</h1>
           <p>Casa: ${obj.house}</p>
           <p>Patronus: ${obj.patronus}</p>
-          <p>Varita:</p>
+          <p>Varitas:</p>
           <li>Madera: ${obj.wand.wood}</li>
           <li>Núcleo: ${obj.wand.core}</li>
           <li>Largo: ${obj.wand.length}</li>
@@ -50,21 +50,21 @@ const characterWands = (data) => {
   data.map((obj) => {
     templatePotter += `
     <div class="card">
-    <div class="card-inside">
-      <div class="card-front">
-      <img src="${obj.image}" alt="Image" class="pictureCharacter"/>
-      <h2 class="fontNameCharacter">${obj.name}</h2>
-      <div class="card-back">
+      <div class="card-inside">
+            <div class="card-front">
+              <img src="${obj.image}" alt="Image" class="pictureCharacter"/>
+              <h2 class="fontNameCharacter">${obj.name}</h2>
+            </div>
+        <div class="card-back">
+          <h1>${obj.name}</h1>
+          <p  id="hola">VARITAS:</p>
+          <li>Madera: ${obj.wand.wood}</li>
+          <li>Núcleo: ${obj.wand.core}</li>
+          <li>Largo: ${obj.wand.length}</li>
+       </div>
       </div>
-        <h1>${obj.name}</h1>
-        <p>Varita:</p>
-        <li>Madera: ${obj.wand.wood}</li>
-        <li>Núcleo: ${obj.wand.core}</li>
-        <li>Largo: ${obj.wand.length}</li>
-      </div>
-    </div>
-    </div>
-    `;
+    </div>;`;
+
     return templatePotter;
   });
   return templatePotter;
@@ -88,6 +88,29 @@ wandsMenu.addEventListener('click', () => {
   document.querySelector('#insertWands').innerHTML = characterWands(arrWands);
 });
 
+// Función que crea cards mostrando descripción de varitas
+const showPotterSpells = (file) => {
+  let templateSpellsPotter = '';
+  file.map((obj) => {
+    templateSpellsPotter += `
+    <div class="card">
+      <div class="card-inside">
+            <div class="card-front">
+              <img src="${obj.image}" alt="Image" class="pictureCharacter"/>
+              <h2 class="fontNameCharacter">${obj.name}</h2>
+            </div>
+        <div class="card-back">
+          <h1>${obj.name}</h1>
+          <p>PATRONUS: ${obj.patronus}</p>
+       </div>
+      </div>
+    </div>;`;
+
+    return templateSpellsPotter;
+  });
+  return templateSpellsPotter;
+};
+
 
 // Función que muestra los Hechizos
 const spellsMenu = document.getElementById('spellsMenu');
@@ -103,7 +126,7 @@ spellsMenu.addEventListener('click', () => {
   potterStudents.style.display = 'none';
 
   const arrSpells = filterSpells(POTTER);
-  document.getElementById('insertPotterSpells').innerHTML = showMainPotterCharacters(arrSpells);
+  document.getElementById('insertPotterSpells').innerHTML = showPotterSpells(arrSpells);
 });
 
 
