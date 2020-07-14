@@ -147,14 +147,13 @@ margin-top: 0px;
 /*Estilos del filtro */
 
 #filterCategories {
-  text-align: initial;
+  text-align: right;
   position: relative;
   align-items: initial;
 }
 
 #filterSelection {
   background: #336f8f;
-  border-radius: 7px;
   border-color: #659dbf;
   color: #ffffff;
   padding: 5px;
@@ -247,7 +246,7 @@ text-align: left;
 
 h1 {
   font-size: 25px;
-  margin: 25px 20px 18px;
+  margin: -1px 20px 18px -1px;
   text-align: center;
   font-family: 'Marcellus SC', serif;
 }
