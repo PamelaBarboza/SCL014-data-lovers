@@ -259,13 +259,13 @@ filterSelection.addEventListener('change', () => {
   containerShow.style.display = 'none';
   wandsContainer.style.display = 'none';
   potterSpells.style.display = 'none';
-  potterGryffindor.style.display = 'none';
-  potterSlytherin.style.display = 'none';
-  potterHufflepuff.style.display = 'none';
-  potterRavenclaw.style.display = 'none';
-  potterStaff.style.display = 'none';
-  potterStudents.style.display = 'none';
-  insertPotterCharacter.style.display = 'block';
+  potterGryffindor.style.display = 'block';
+  potterSlytherin.style.display = 'block';
+  potterHufflepuff.style.display = 'block';
+  potterRavenclaw.style.display = 'block';
+  potterStaff.style.display = 'block';
+  potterStudents.style.display = 'block';
+  principalContainer.style.display = 'block';
 });
 
 
@@ -293,16 +293,4 @@ text.addEventListener('keyup', () => {
   }
 });
 
-/* // Filtro 'Gender'
-function selectGender() {
-  document.querySelector('#house').value = '';
-  document.querySelector('#role').value = '';
-  const genderFilter = gender.value;
-  const genderElement = filterGender(genderFilter);
-  container.innerHTML = '';
-  showData(genderElement);
-}
 
-house.addEventListener('change', selectHouse);
-role.addEventListener('change', selectRole);
-gender.addEventListener('change', selectGender); */
