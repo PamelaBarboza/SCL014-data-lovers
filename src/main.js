@@ -5,7 +5,7 @@
 /* eslint-disable no-console */
 import {
   // eslint-disable-next-line max-len
-  filterWands, filterSpells, filterPotterHouse, filterHogwartsStaff, filterHogwartsStudents, searchCharacters,
+  filterWands, filterSpells, filterPotterHouse, filterHogwartsStaff, filterHogwartsStudents, searchCharacters, orderByNameAndGender,
 } from './data.js';
 import POTTER from './data/potter/potter.js';
 
@@ -82,6 +82,7 @@ wandsMenu.addEventListener('click', () => {
   potterRavenclaw.style.display = 'none';
   potterStaff.style.display = 'none';
   potterStudents.style.display = 'none';
+  insertPotterCharacter.style.display = 'none';
   text.value = '';
 
   const arrWands = filterWands(POTTER);
@@ -124,6 +125,7 @@ spellsMenu.addEventListener('click', () => {
   potterRavenclaw.style.display = 'none';
   potterStaff.style.display = 'none';
   potterStudents.style.display = 'none';
+  insertPotterCharacter.style.display = 'none';
 
   const arrSpells = filterSpells(POTTER);
   document.getElementById('insertPotterSpells').innerHTML = showPotterSpells(arrSpells);
@@ -143,6 +145,7 @@ filterHGryffindor.addEventListener('click', () => {
   potterRavenclaw.style.display = 'none';
   potterStaff.style.display = 'none';
   potterStudents.style.display = 'none';
+  insertPotterCharacter.style.display = 'none';
 
 
   const filterGryff = filterPotterHouse(POTTER, valuePotterGryffindor);
@@ -163,6 +166,7 @@ filterHSlytherin.addEventListener('click', () => {
   potterRavenclaw.style.display = 'none';
   potterStaff.style.display = 'none';
   potterStudents.style.display = 'none';
+  insertPotterCharacter.style.display = 'none';
 
   const filterSly = filterPotterHouse(POTTER, valueSlytherin);
   document.getElementById('filterSlytherin').innerHTML = showMainPotterCharacters(filterSly);
@@ -181,6 +185,7 @@ filterHHufflepuff.addEventListener('click', () => {
   potterRavenclaw.style.display = 'none';
   potterStaff.style.display = 'none';
   potterStudents.style.display = 'none';
+  insertPotterCharacter.style.display = 'none';
 
 
   const filterHuff = filterPotterHouse(POTTER, valueHufflepuff);
@@ -200,6 +205,7 @@ filterHRavenclaw.addEventListener('click', () => {
   potterRavenclaw.style.display = 'block';
   potterStaff.style.display = 'none';
   potterStudents.style.display = 'none';
+  insertPotterCharacter.style.display = 'none';
 
   const filterRav = filterPotterHouse(POTTER, valueRavenclaw);
   document.getElementById('insertPotterRavenclaw').innerHTML = showMainPotterCharacters(filterRav);
@@ -217,6 +223,7 @@ subOption5.addEventListener('click', () => {
   potterRavenclaw.style.display = 'none';
   potterStaff.style.display = 'block';
   potterStudents.style.display = 'none';
+  insertPotterCharacter.style.display = 'none';
 
   const arrStaff = filterHogwartsStaff(POTTER);
   document.getElementById('filterStaff').innerHTML = showMainPotterCharacters(arrStaff);
@@ -235,19 +242,31 @@ subOption6.addEventListener('click', () => {
   potterRavenclaw.style.display = 'none';
   potterStaff.style.display = 'none';
   potterStudents.style.display = 'block';
+  insertPotterCharacter.style.display = 'none';
 
   const arrStudents = filterHogwartsStudents(POTTER);
   document.getElementById('filterStudents').innerHTML = showMainPotterCharacters(arrStudents);
 });
 
-/* // Función que ordena alfabéticamente y por género
+// Función que ordena alfabéticamente y por género
 const filterSelection = document.querySelector('#filterSelection');
 
 // Función que muestra personajes por orden a-z, z-a y género
 filterSelection.addEventListener('change', () => {
   const arrByNameOrGender = orderByNameAndGender(POTTER, filterSelection.value);
   insertPotterCharacter.innerHTML = showMainPotterCharacters(arrByNameOrGender);
-}); */
+  searchContainer.style.display = 'none';
+  containerShow.style.display = 'none';
+  wandsContainer.style.display = 'none';
+  potterSpells.style.display = 'none';
+  potterGryffindor.style.display = 'none';
+  potterSlytherin.style.display = 'none';
+  potterHufflepuff.style.display = 'none';
+  potterRavenclaw.style.display = 'none';
+  potterStaff.style.display = 'none';
+  potterStudents.style.display = 'none';
+  insertPotterCharacter.style.display = 'block';
+});
 
 
 // Función que muestra los resultados de búsqueda en tiempo real
@@ -263,6 +282,7 @@ text.addEventListener('keyup', () => {
   potterRavenclaw.style.display = 'none';
   potterStaff.style.display = 'none';
   potterStudents.style.display = 'none';
+  insertPotterCharacter.style.display = 'none';
 
 
   const arrSearchCharacter = searchCharacters(POTTER, text.value);

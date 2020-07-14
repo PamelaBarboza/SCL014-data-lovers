@@ -3,19 +3,35 @@ export const example = () => 'example';
 
 export const anotherExample = () => 'OMG'; */
 // Función que filtra personajes por orden a-z, z-a y filtra por género
-/* export const orderByNameAndGender = (array, string1) => {
+export const orderByNameAndGender = (array, string1) => {
   const arrayData = [...array];
-  const newArray = arrayData.map((obj) => obj.name)
-    .sort().map((string2) => arrayData.find((obj) => obj.name === string2));
+  const newArray = arrayData.map(obj => obj.name)
+    .sort().map(string2 => arrayData.find(obj => obj.name === string2));
   if (string1 === 'A-Z') {
     return newArray;
   } if (string1 === 'Z-A') {
     return newArray.reverse();
   } if (string1 === 'Femenino') {
-    return arrayData.filter((obj) => (obj).gender === 'female');
+    return arrayData.filter(obj => (obj).gender === 'female');
   }
-  return arrayData.filter((obj) => (obj).gender === 'male');
-}; */
+  return arrayData.filter(obj => (obj).gender === 'male');
+};
+
+/*
+export const orderByName = (array) => {
+  const arrayData = [...array];
+  const newArray = arrayData.map((obj) => obj.name)
+  array.sort((prev, next) => {
+  if (prev.name > next.name) {
+    return 1;
+  }
+  if (prev.name < next.name) {
+    return -1;
+  }
+  return 0;
+//  return prev.level - next.level;
+})); */
+
 
 // Función que filtre solo personajes con varitas
 

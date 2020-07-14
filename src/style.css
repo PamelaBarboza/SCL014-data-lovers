@@ -168,7 +168,7 @@ option {
 
 /*------ Estilos tarjetas personajes -----*/
 
-#show, #insertWands, #insertPotterSpells, #filterGryffindor, #filterSlytherin, #insertPotterRavenclaw, #insertPotterHufflepuff, #filterStudents, #filterStaff, #searchResults {
+#show, #insertWands, #insertPotterSpells, #filterGryffindor, #filterSlytherin, #insertPotterRavenclaw, #insertPotterHufflepuff, #filterStudents, #filterStaff, #searchResults #insertPotterCharacter {
 
 display: flex;
 flex-direction: row;
