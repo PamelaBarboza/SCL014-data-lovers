@@ -3,7 +3,7 @@ export const example = () => 'example';
 
 export const anotherExample = () => 'OMG'; */
 // Función que filtra personajes por orden a-z, z-a y filtra por género
-/*export const orderByNameAndGender = (array, string1) => {
+/* export const orderByNameAndGender = (array, string1) => {
   const arrayData = [...array];
   const newArray = arrayData.map((obj) => obj.name)
     .sort().map((string2) => arrayData.find((obj) => obj.name === string2));
@@ -15,7 +15,7 @@ export const anotherExample = () => 'OMG'; */
     return arrayData.filter((obj) => (obj).gender === 'female');
   }
   return arrayData.filter((obj) => (obj).gender === 'male');
-};*/
+}; */
 
 // Función que filtre solo personajes con varitas
 
