@@ -300,3 +300,9 @@ const boton = document.querySelector('.boton');
 boton.addEventListener('click', () => {
   window.location.reload();
 });
+
+// eslint-disable-next-line no-unused-vars
+const menuIcon = document.querySelector('.menu-icon');
+$('.menu-icon').click(() => {
+  $('header nav').slideToggle();
+});
