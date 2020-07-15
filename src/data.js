@@ -17,22 +17,6 @@ export const orderByNameAndGender = (array, string1) => {
   return arrayData.filter(obj => (obj).gender === 'male');
 };
 
-/*
-export const orderByName = (array) => {
-  const arrayData = [...array];
-  const newArray = arrayData.map((obj) => obj.name)
-  array.sort((prev, next) => {
-  if (prev.name > next.name) {
-    return 1;
-  }
-  if (prev.name < next.name) {
-    return -1;
-  }
-  return 0;
-//  return prev.level - next.level;
-})); */
-
-
 // Función que filtre solo personajes con varitas
 
 export const filterWands = (array) => {

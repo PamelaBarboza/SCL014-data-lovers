@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HARRY POTER</title>
-    <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-
   </head>
   <body>    
+    <!-- Header: BANNER Y LOGO-->
     <div class="header">
       <img class="boton" src="./img/logo.png">
       <img class="banner" src="./img/banner2.jpg">    
     </div>
 
+    <!-- Main: Buscador y categorias-->
     <nav id="menu_general">
         <div class="container-4">
         <input type="search" id="search" placeholder="Busca por nombre" />
@@ -40,11 +40,9 @@
           </ul>
         </li>
       </ul>
-  
-     
-    </nav>
-    
-    
+    </nav>      
+
+    <!-- Main: Filtro-->
 
     <div id="principalContainer">
       <div id="filterCategories">
@@ -62,11 +60,17 @@
       </div>
       <div id="insertPotterCharacter"></div>
     </div>
- 
+
+    <!-- Main: link para ir a la pagina de Wizarding World-->
+    <div id="Game">
+      <a href="https://www.wizardingworld.com/" target="_blank" ><img class="GameW" src="./img/wizarding.png"></a>
+    </div>
     
+    <!-- Main: Contenedores que muestran y ocultan las categorias-->
     <div id="principalCo">
-    <div class="hide" id="containerShow" style="display:block">
-    <div id="show"></div>
+      <div class="hide" id="containerShow" style="display:block">
+      <div id="show"></div>
+      </div>
    </div>
     
    <div class="hide" id="wandsContainer" style="display:none">
@@ -113,7 +117,12 @@
     <h1 class="titlesOcupation">Resultados de búsqueda</h1>
     <div id="searchResults"></div>
   </div>
-  
+
+  <!-- Footer: Links a redes sociales del Wizarding World-->
+
+  <footer class="footer"></footer>
+
+ <!-- links de los enlaces -->
      <div id="root"></div>
     <script src="main.js" type="module"></script>
     <script type="module" src="data.js"></script>

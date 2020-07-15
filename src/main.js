@@ -56,11 +56,12 @@ const characterWands = (data) => {
               <h2 class="fontNameCharacter">${obj.name}</h2>
             </div>
         <div class="card-back">
-          <h1>${obj.name}</h1>
-          <p  id="hola">VARITAS:</p>
+          <p  id="helloWands">VARITAS</p>
+          <div class="helloW">
           <li>Madera: ${obj.wand.wood}</li>
           <li>Núcleo: ${obj.wand.core}</li>
           <li>Largo: ${obj.wand.length}</li>
+          </div>
        </div>
       </div>
     </div>;`;
@@ -100,9 +101,8 @@ const showPotterSpells = (file) => {
               <img src="${obj.image}" alt="Image" class="pictureCharacter"/>
               <h2 class="fontNameCharacter">${obj.name}</h2>
             </div>
-        <div class="card-back">
-          <h1>${obj.name}</h1>
-          <p>PATRONUS: ${obj.patronus}</p>
+        <div class="card-back">         
+          <p id="helloPatronus">PATRONUS ${obj.patronus}</p>
        </div>
       </div>
     </div>;`;
@@ -293,4 +293,10 @@ text.addEventListener('keyup', () => {
   }
 });
 
+// Logo alterno
+const boton = document.querySelector('.boton');
 
+// Función para volver al inicio haciendo click en logo alterno del Menú
+boton.addEventListener('click', () => {
+  window.location.reload();
+});
