@@ -301,6 +301,7 @@ boton.addEventListener('click', () => {
   window.location.reload();
 });
 
+// Funcion para el celular
 // eslint-disable-next-line no-unused-vars
 const menuIcon = document.querySelector('.menu-icon');
 $('.menu-icon').click(() => {

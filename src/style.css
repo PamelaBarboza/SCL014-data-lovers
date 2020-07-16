@@ -340,121 +340,128 @@ h1 {
 
 @media (max-width:360px){
 
-  nav{
+nav{
     top: 70px;
     left: 33px;
     width: 56%;
     display: none;
+
   }
 
- #menu_general{
-display: none;
-  }
+#menu_general{
+    display: none;
 
-  .menu-icon{
-    display: block;
-    width: 10%;
-    height: 12%;
-    margin-left: 5%;
-    margin-top: 5%;
+}
+
+.menu-icon{
+  display: block;
+  width: 10%;
+  height: 12%;
+  margin-left: 5%;
+  margin-top: 5%;
 }
 
 #filterSelection {
-  display: none;
+   display: none;
+
 }
-
-
-
-  .boton{
+.boton{
   display: none;
-  }
+
+}
 
   .GameW {
-display: none;
+  display: none;
 }
 
-  #show, #insertWands, #insertPotterSpells, #filterGryffindor, #filterSlytherin, #insertPotterRavenclaw, #insertPotterHufflepuff, #filterStudents, #filterStaff, #searchResults, #insertPotterCharacter {
+#show, #insertWands, #insertPotterSpells, #filterGryffindor, #filterSlytherin, #insertPotterRavenclaw, #insertPotterHufflepuff, #filterStudents, #filterStaff, #searchResults, #insertPotterCharacter {
 
-    display: inline-block;
-    flex-direction: column;
-    justify-content: center; 
-    color: #ffffff;
-    margin-left: 30px;
-    transition: width 2s, height 2s, transform 2s;
-    }
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center; 
+  color: #ffffff;
+  margin-left: 30px;
+  transition: width 2s, height 2s, transform 2s;
+}
 
-    .pictureCharacter {
-      display: inline-block;
-      width: 120px;
-      height: 165px;
-      margin: 10%;
-  }
+.pictureCharacter {
+  display: inline-block;
+  width: 120px;
+  height: 165px;
+  margin: 10%;
+}
 
-  .icon{
-    display: none;
+.icon{
+  display: none;
 
-  }
+}
 
-  .card-front, .card-back {
-    position: absolute;
-    width: 90%;
-    height: 80%;
-    backface-visibility: hidden;
-    margin-top: 54%;
-
+.card-front, .card-back {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  backface-visibility: hidden;
+  margin-top: -30%;
+  margin-left: 20%;
 }
 
 h1 {
   font-size: 20px;
+
 }
 
 p {
   font-size: 13px;
   margin: 5px 36px;
-   }
 
-   .footer {
-    bottom: -15px;
-    height: 75%;
-    margin-top: 31%; 
+}
+
+.footer {
+  bottom: -15px;
+  height: 75%;
+  margin-top: 31%; 
+
 }
 
 .box .social {
   text-align: center;
   margin-top: 10px;
-  margin-left: 30%;
-  height: 50%;
-  width: 40%;
+  margin-left: 15%;
+  height: 52%;
+  width: 69%;
 
 }
 
 #developers {
-  color: white;
-  text-align: center;
-  margin-left: -2%;
-  margin-top: -2%;
-  width: 100%;
+color: white;
+text-align: center;
+margin-left: -2%;
+margin-top: -2%;
+width: 100%;
+
 }
 
 .iconMenu1, .iconMenu2{
   display: none;
+
 }
 
 .GameW, #Game{
-display: none;
+  display: none;
+
 }
 
 .titlesOcupation {
  display: none;
+
 }
 
-  }
-
+}
   
 
 @media (max-width:768px){
   .boton{
-    height: 18%;
+    height: 12%;
     width: 15%;
     margin-left: 9%; 
     margin-top: 0%;
@@ -464,9 +471,9 @@ display: none;
 .icon-search {
   cursor: pointer;
   color: #000000;
-  margin-top: -36px;
+  margin-top: -14px;
   font-size: 24px;
-  left: 30%;
+  left: 86%;
   position: absolute;
   z-index: 1;
 }
@@ -476,4 +483,57 @@ width: 30%;
 height: 30%;
 
 }
+
+.titlesOcupation {
+  font-size: 28px;
+  margin: -1px -194px 18px -1px;
 }
+
+#developers {
+  margin-left: -19%;
+ 
+}
+
+.GameW, #Game{
+  display: none;
+
+}
+
+#filterSelection {
+  background: #336f8f;
+  border-color: #659dbf;
+  color: #ffffff;
+  padding: 5px;
+  margin: 23px 69px;
+}
+
+#show, #insertWands, #insertPotterSpells, #filterGryffindor, #filterSlytherin, #insertPotterRavenclaw, #insertPotterHufflepuff, #filterStudents, #filterStaff, #searchResults, #insertPotterCharacter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #ffffff;
+  margin-left: -4px;
+  transition: width 2s, height 2s, transform 2s;
+  margin-top: 19%;
+} 
+
+.titlesOcupation {
+  font-size: 64px;
+  margin: 14px -194px 32px 283px;
+  width: 56%;
+  height: 50%;
+  padding: 4%;
+}
+
+.box .social {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 49%;
+  height: 52%;
+  width: 69%;
+  text-decoration: none;
+}
+
+}
+
