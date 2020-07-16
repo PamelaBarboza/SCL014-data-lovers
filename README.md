@@ -109,8 +109,6 @@ Definición de Terminado (DOD):
 - pedir ayuda cuando ya agotamos las alternativas
 - Realizar test unitarios de nuestras funciones
 
-Así se ve nuestra App Web tras culminar la segunda historia de usuario:
-
 
 TERCERA HISTORIA DE USUARIO (Refrescar página a través de logo principal)
 
@@ -159,3 +157,13 @@ Definición de Terminado (DOD):
 - jamás dormimos menos de 8hrs
 - pedimos code review a al menos 3 compañeras
 - pedir ayuda cuando ya agotamos las alternativas
+
+# Test Unitarios 
+
+Nuestra última tarea consistió en realizar los test unitarios para corroborar que nuestras funciones estaban corriendo correctamente y que cumplieron con los objetivos.
+
+<p align="center">
+  <img src="img/testUnitarios.jpg" width="350" title="Test Unitarios">
+</p>
+
+
