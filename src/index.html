@@ -4,19 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HARRY POTER</title>
-    <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-
   </head>
   <body>    
+    <!-- Header: BANNER Y LOGO-->
+    <header>
     <div class="header">
       <img class="boton" src="./img/logo.png">
-      <img class="banner" src="./img/banner2.jpg">    
+      <img class="banner" src="./img/banner2.jpg">  
     </div>
-
+  
+    
+    <img class="menu-icon" src="./img/menu.png"> 
+    <!-- Main: Buscador y categorias-->
     <nav id="menu_general">
+    
         <div class="container-4">
         <input type="search" id="search" placeholder="Busca por nombre" />
         <button class="icon"><i class="fab fa-searchengin icon-search"></i></button>
@@ -40,168 +44,108 @@
           </ul>
         </li>
       </ul>
-    </nav>
-    <div id="show"></div>
-    
-   <div id="wandsContainer">
-      <div id="insertWands"></div>
+    </nav>      
+  </header>
+    <!-- Main: Filtro-->
+
+    <div id="principalContainer">
+      <div id="filterCategories">
+        <select id="filterSelection">
+          <option hidden selected> F I L T R O</option>
+          <optgroup label="- Ordenar">
+            <option value="A-Z"> A - Z </option>
+            <option value="Z-A"> Z - A </option>
+          </optgroup>
+          <optgroup label="- Género">
+            <option value="Femenino"> Femenino </option>
+            <option value="Masculino"> Masculino </option>
+          </optgroup>
+        </select>
+      </div>
+      <div id="insertPotterCharacter"></div>
     </div>
 
-    <div id="potterSpells">
+    <!-- Main: link para ir a la pagina de Wizarding World-->
+    <div id="Game">
+      <a href="https://www.wizardingworld.com/" target="_blank" ><img class="GameW" src="./img/wizarding.png"></a>
+    </div>
+    
+    <!-- Main: Contenedores que muestran y ocultan las categorias-->
+    <div id="principalCo">
+      <div class="hide" id="containerShow" style="display:block">
+      <div id="show"></div>
+      </div>
+   </div>
+    
+   <div class="hide" id="wandsContainer" style="display:none">
+    <h1 class="titlesOcupation">Varitas Mágicas</h1>
+    <div id="insertWands"></div>
+  </div>
+
+    <div class="hide" id="potterSpells" style="display:none">
+      <h1 class="titlesOcupation">Hechizos</h1>
       <div id="insertPotterSpells"></div>
     </div>
 
-    <div id="potterGryffindor">
-    <div id="filterGryffindor">
+    <div class="hide" id="potterGryffindor" style="display:none">
+    <h1 class="titlesOcupation">Casa Gryffindor</h1>
+    <div id="filterGryffindor"></div>
+    </div>
 
-    <div id="potterSlytherin">
-      <div id="filterSlytherin">
+    <div class="hide" id="potterSlytherin" style="display:none">
+      <h1 class="titlesOcupation">Casa Slytherin</h1>
+      <div  id="filterSlytherin"></div>
+    </div>
 
-    <div id="potterHufflepuff">
+    <div class="hide" id="potterHufflepuff" style="display:none">
+      <h1 class="titlesOcupation">Casa Hufflepuffn</h1>
        <div id="insertPotterHufflepuff"></div>
     </div>
     
-    <div id="potterRavenclaw">        
+    <div class="hide" id="potterRavenclaw" style="display:none"> 
+      <h1 class="titlesOcupation">Casa Ravenclaw</h1>       
        <div id="insertPotterRavenclaw"></div>
     </div>
-    
 
-  
+    <div class="hide" id="potterStaff" style="display:none">
+      <h1 class="titlesOcupation">Profesores</h1>
+    <div id="filterStaff"></div>
+    </div>
 
+  <div class="hide" id="potterStudents" style="display:none">
+    <h1 class="titlesOcupation">Estudiantes</h1>
+  <div id="filterStudents"></div>
+  </div>
 
-  
-    
+  <div class="hide" id="searchContainer" style="display:none">
+    <h1 class="titlesOcupation">Resultados de búsqueda</h1>
+    <div id="searchResults"></div>
+  </div>
 
-    
+  <!-- Footer: Links a redes sociales del Wizarding World-->
 
+  <footer class="footer">
+  <div class="box">
+    <div class="social">
+      <a href="https://www.facebook.com/wizardingworld" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/wizardingworld" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/wizardingworld/" target="_blank"><i class="fab fa-instagram"></i></a>
 
-
-
-
-
-<!--    
-        <div id="filterCategories">
-          <select id="filterSelection">
-            <option hidden selected> F I L T R O</option>
-            <optgroup label="- Ordenar">
-              <option value="A-Z"> A - Z </option>
-              <option value="Z-A"> Z - A </option>
-            </optgroup>
-            <optgroup label="- Género">
-              <option value="Femenino"> Femenino </option>
-              <option value="Masculino"> Masculino </option>
-            </optgroup>
-          </select>
-        </div>
-        <div id="insertPotterCharacter"></div>
-      </div>
-    
-      <div class="hide" id="searchContainer">
-        <h1 class="titlesOcupation">Resultados de búsqueda</h1>
-        <div id="searchResults"></div>
+      <div class="Devs">
+        <p id="developers">&copy; Blanco & Barboza | Developers 2020</p>
       </div>
   
-      <div class="hide" id="potterStudents">
-        <h1 class="titlesOcupation">Estudiantes de Hogwarts</h1>
-        <div id="filterStudents">
-          <select id="secondFilter">
-            <option hidden selected> F I L T R O </option>
-            <optgroup label="- Ordenar">
-              <option value="A-Z"> A - Z </option>
-              <option value="Z-A"> Z - A </option>
-            </optgroup>
-            <optgroup label="- Género">
-              <option value="Femenino"> Femenino </option>
-              <option value="Masculino"> Masculino </option>
-            </optgroup>
-          </select>
-        </div>
-        <div id="insertPotterStudents"></div>
-      </div>
-  
-      <div class="hide" id="potterStaff">
-        <h1 class="titlesOcupation">Staff de Hogwarts</h1>
-        <div id="filterStaff">
-          <select id="thirdFilter">
-            <option hidden selected> F I L T R O </option>
-            <optgroup label="- Ordenar">
-              <option value="A-Z"> A - Z </option>
-              <option value="Z-A"> Z - A </option>
-            </optgroup>
-            <optgroup label="- Género">
-              <option value="Femenino"> Femenino </option>
-              <option value="Masculino"> Masculino </option>
-            </optgroup>
-          </select>
-        </div>
-        <div id="insertPotterStaff"></div>
-      </div>
-  
-      <div class="hide" id="potterGryffindor">
-        <h1 class="titlesOcupation">Gryffindor</h1>
-        <div id="filterGryffindor">
-          <select id="fourthFilter">
-            <option hidden selected> F I L T R O </option>
-            <optgroup label="- Ordenar">
-              <option value="A-Z"> A - Z </option>
-              <option value="Z-A"> Z - A </option>
-            </optgroup>
-            <optgroup label="- Género">
-              <option value="Femenino"> Femenino </option>
-              <option value="Masculino"> Masculino </option>
-            </optgroup>
+      
+    </div>
+  </div>
+</footer>
 
-           
 
-            
-          </select>
-        </div>
-        <div id="insertPotterGryffindor"></div>
-      </div>
-  
-      <div class="hide" id="potterSlytherin">
-        <h1 class="titlesOcupation">Slytherin</h1>
-        <div id="filterSlytherin">
-          <select id="fifthFilter">
-            <option hidden selected> F I L T R O </option>
-            <optgroup label="- Ordenar">
-              <option value="A-Z"> A - Z </option>
-              <option value="Z-A"> Z - A </option>
-            </optgroup>
-            <optgroup label="- Género">
-              <option value="Femenino"> Femenino </option>
-              <option value="Masculino"> Masculino </option>
-            </optgroup>
-          </select>
-        </div>
-        <div id="insertPotterSlytherin"></div>
-      </div>
-  
-      <div class="hide" id="potterHufflepuff">
-        <h1 class="titlesOcupation">Hufflepuff</h1>
-        <div id="insertPotterHufflepuff"></div>
-      </div>
-  
-      <div class="hide" id="potterRavenclaw">
-        <h1 class="titlesOcupation">Ravenclaw</h1>
-        <div id="insertPotterRavenclaw"></div>
-      </div>
-  
-      <div class="hide" id="wandsContainer">
-        <h1 class="titlesOcupation">Varitas Mágicas</h1>
-        <div id="insertWands"></div>
-      </div>
-  
-      <div class="hide" id="potterSpells">
-        <h1 class="titlesOcupation">Hechizos</h1>
-        <h3>Patronus</h3>
-        <div id="insertPotterSpells"></div>
-      </div>
-  
-    </main>
- -->
+ <!-- links de los enlaces -->
      <div id="root"></div>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="main.js" type="module"></script>
     <script type="module" src="data.js"></script>
   </body>
 </html>
+  
