@@ -138,8 +138,6 @@ Definición de Terminado (DOD):
 - pedir ayuda cuando ya agotamos las alternativas
 - Realizar test unitarios de nuestras funciones
 
-Así se ve nuestra App Web tras culminar la segunda historia de usuario:
-
 
 TERCERA HISTORIA DE USUARIO (Refrescar página a través de logo principal)
 
@@ -189,5 +187,3 @@ Definición de Terminado (DOD):
 - pedimos code review a al menos 3 compañeras
 - pedir ayuda cuando ya agotamos las alternativas
 
-Test Unitarios
-![testUnitarios](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/testUnitarios.jpg)
