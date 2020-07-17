@@ -12,42 +12,67 @@ No tenemos rango de edad ya que pensamos que cualquier persona podria ser fanati
 
 # Encuesta:
 
-<p align="center">
+<!--
   <img src="img/ResultadoFormulario.jpg" width="350" title="Resultado del Formulario">
   <img src="img/encuesta.jpg" width="350" title="Resultado en gráficos">
   <img src="img/encuesta2.jpg" width="350" title="Resultado en gráficos">
   <img src="img/encuesta3.jpg" width="350" title="Resultado en gráficos">
    <img src="img/encuesta4.jpg" width="350" title="Resultado en gráficos">
-  <img src="img/encuesta5.jpg" width="350" title="Resultado en gráficos">
-</p>
+  <img src="img/encuesta5.jpg" width="350" title="Resultado en gráficos">-->
+
+![ResultadoFormulario](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/ResultadoFormulario.jpeg)
+![encuesta](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/encuesta.jpg)
+![encuesta2](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/encuesta2.jpeg)
+![encuesta3](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/encuesta3.jpeg)
+![encuesta4](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/encuesta4.jpeg)
+![encuesta5](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/encuesta5.jpg)
+
+
 
 <p align="center">
-  <img src="img/tres.jpg" width="350" title="A mano alzada">
+
+![tres](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/tres.jpeg)
+![uno](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/uno.jpg)
+![dos](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/dos.jpeg)
+![cuatro](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/cuatro.jpeg)
+  <!--<img src="img/tres.jpg" width="350" title="A mano alzada"> 
   <img src="img/uno.jpg" width="350" title="Prototipo de baja definición">
   <img src="img/dos.jpg" width="350" title="Prototipo de baja definición">
-  <img src="img/cuatro.jpg" width="350" title="Prototipo de baja definición">
+  <img src="img/cuatro.jpg" width="350" title="Prototipo de baja definición">-->
 </p>
+
 
 figma: prototipo de Alta definición
 
 <p align="center">
+
+![figma1](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/figma1.jpeg)
+![figma2](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/figma2.jpg)
+![figma3](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/figma3.jpeg)
+<!--
   <img src="img/figma1.jpg" width="350" title="Prototipo de alta definición">
   <img src="img/figma2.jpg" width="350" title="Prototipo de alta definición">
-  <img src="img/figma3.jpg" width="350" title="Prototipo de alta definición">
+  <img src="img/figma3.jpg" width="350" title="Prototipo de alta definición">-->
+
 </p>
 LINK:https://www.figma.com/proto/sixLWEtZ7ptFu0LEzR2FJf/HARRY-POTTER?node-id=48%3A220&viewport=1460%2C898%2C0.6289837956428528&scaling=contain
 
 # Trello planificacion:
 
 <p align="center">
+
+![trello](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/trello.jpg)
+![trello_dos](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/trello_dos.jpg)
+<!--
   <img src="img/trello.jpg" width="350" title="Trello pantallazo gral.">
-  <img src="img/trello_dos.jpg" width="350" title="Trello primera historia de usuario 1">
+  <img src="img/trello_dos.jpg" width="350" title="Trello primera historia de usuario 1">-->
 </p>
 
 TRELLO FINAL 
 
 <p align="center">
-  <img src="img/trello-final.png" width="350" title="Trello final">
+  <!--<img src="img/trello-final.png" width="350" title="Trello final">-->
+  ![trello-final](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/trello-final.jpeg)
 </p>
 
 # Paleta de colores:
@@ -56,8 +81,12 @@ Como primera instancia decidimos que nuestra página se vea limpia, entonces ele
 Los colores que decidimos usar fueron:
 
 <p align="center">
+
+![paleta de colores](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/paleta%20de%20colores.jpg)
+![colores](https://raw.githubusercontent.com/PamelaBarboza/SCL014-data-lovers/master/src/img/colores.jpg)
+<!--
   <img src="img/paleta de colores.jpg" width="350" title="Extracción de colores">
-  <img src="img/colores" width="350" title="Paleta de colores">
+  <img src="img/colores" width="350" title="Paleta de colores">-->
 </p>
 
 # Historias de Usuario:
@@ -157,13 +186,4 @@ Definición de Terminado (DOD):
 - jamás dormimos menos de 8hrs
 - pedimos code review a al menos 3 compañeras
 - pedir ayuda cuando ya agotamos las alternativas
-
-# Test Unitarios 
-
-Nuestra última tarea consistió en realizar los test unitarios para corroborar que nuestras funciones estaban corriendo correctamente y que cumplieron con los objetivos.
-
-<p align="center">
-  <img src="img/testUnitarios.jpg" width="350" title="Test Unitarios">
-</p>
-
 
